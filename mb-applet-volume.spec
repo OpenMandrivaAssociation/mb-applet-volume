@@ -1,15 +1,15 @@
 %define name 	mb-applet-volume
-%define version 0.1
-%define release 1mdk
+%define version 0.2
+%define release %mkrel 1
 
 Summary: 	Volume control for the Matchbox Desktop
 Name: 		%name
 Version: 	%version
 Release: 	%release
-Url: 		http://matchbox.handhelds.org/
-License: 	GPL
+Url: 		http://matchbox-project.org
+License: 	GPLv2+
 Group: 		Graphical desktop/Other
-Source: 	ftp://ftp.handhelds.org/matchbox/sources/%name/%version/%{name}-%{version}.tar.bz2
+Source: 	http://matchbox-project.org/sources/%name/%version/%{name}-%{version}.tar.bz2
 
 Buildroot: 	%_tmppath/%name-%version-buildroot
 BuildRequires:	gtk2-devel matchbox-devel libXsettings-client-devel
@@ -37,4 +37,3 @@ rm -rf $RPM_BUILD_ROOT
 %_bindir/mb*
 %_datadir/applications/*
 %_datadir/pixmaps/*
-
