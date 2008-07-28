@@ -1,6 +1,6 @@
 %define name 	mb-applet-volume
 %define version 0.2
-%define release %mkrel 1
+%define release %mkrel 3
 
 Summary: 	Volume control for the Matchbox Desktop
 Name: 		%name
